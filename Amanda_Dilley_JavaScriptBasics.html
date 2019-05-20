@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Javascript Basics</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			body {
+				color: rgb(234,252,252);
+				font-family: serif;
+				font-size: 10px;
+			}
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#wrapper {
+				background-color: rgb(17, 33,77);
+				width: 750px;
+				margin: 0px auto;
+				padding: 10px;
+				border-radius: 15px;
+				height: 470px;
+			}
+			.header {
+				background-color: red;
+				width: 720px;
+				height: 30px;
+				padding: 10px;
+				border-radius: 15px;
+			}
+			.nav {
+				background-color: rgb(53,133,149);
+				width: 130px;
+				display: inline-block;
+				margin: 5px;
+				border-radius: 15px;
+				padding: 10px;
+				color: rgb(130,222,236);
+			}
+			.main {
+				background-color: rgb(8,17,40);
+				width: 550px;
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+				height: 350px;
+				padding: 10px;
+				font-size: 1em;
+				border-radius: 15px;
+				margin: 5px;
+			}
+
+			#links {
+				padding-left: 20px;
+			}
+			#inside {
+				padding-left: 20px;
+
+			}
+			.footer {
+				background-color: gray;
+				width: 715px;
+				height: 30px;
+				border-radius: 15px;
+				margin: 5px;
+				padding-top: 10px;
+				padding-left: 20px;
+			}
+			.blue {
+				font-size-adjust: blue;
+			}
+			.title {
+				color:rgb(91,207,230);
+				text-decoration: underline;
+			}
+			.example {
+				color: rgb(36,44,152);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 class="header">JavaScript Basics</h1>
+			<div class="nav">
+				<p><a href="">Home</a></p>
+				<div id="links">
+				<ul>
+					<li><a href="overview">JavaScript Overview</a></li>
+						<ul id="inside">
+							<li><a href="declarations">Variable Declaration</a></li>
+							<li><a href="assignment">Variable Assignment</a></li>
+							<li><a href="data">Data Type</a></li>
+							<li><a href="conditionals">Conditionals</a></li>
+							<li><a href="loops">Loops</a></li>
+							<li><a href="functions">Function</a></li>
+						</ul>
+					<li><a href="">Projects</a></li>
+					<li><a href="">Assignments</a></li>
+					<li><a href="">Quiz</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="main">
+				<h3>JavaScript Basics</h3>
+				<br>
+				<p>JavaScript is a cross-platform, object-oriented scripting language. JavaScript is extremely popular for a variety of reasons. It is a small and lightweight language allowing maximum flexibility for developers to take it in a bunch of different directions. JavaScript lives inside a host environment (a web browser or a Node server), it can be connected to the objects of these environments to provide programmatic control over them.</p>
+				<br>
+				<ul id="inside">
+					<li id="declarations"><span class="title">Variable Declaration</span> JavaScript variables are containers for storing data values - imagine a cup you fill with coffee, the cup holds the coffee, a variable holds the value. All JavaScript variables must be identified with unique names. These unique names are called identifiers, <span class="example">var x;</span></li><br>
+					<li id="assignment"><span class="title">Variable Assignment</span> Assignment operators assign values to JavaScript variables - our cup can now have coffee poured in it, giving our variable a value to hold. The = assignment operator assignes a value to a variable. <span class="example">var x = 10;</span></li><br>
+					<li id="data"><span class="title">Data Types</span> Data types are an important concept; to be able to operate on variables you need to know the data type. There are six data types that are JavaScript primitives: Boolean <span class="example">true</span> or <span class="example">false;</span> null = <span class="example">null</span> aka nothing; Number = <span class="example">42</span> or <span class="example">3.14159;</span> String = <span class="example">"Coding Dojo Rocks!";</span> Array = <span class="example">[1, "Coding", 2, "dojo";</span> and Object = <span class="example">{first_name: 'Jane', last_name: 'Doe'}</span></li><br>
+					<li id="conditionals"><span class="title">Conditionals</span> When you write code, you want to perform different actions for different decisions - hitting different code blocks based on values or conditions that have been met. You can use conditional statements in your code to accomplish this. There are the following conditional statements: <span class="example">if</span> a specified condition is true, do this code in our code block; <span class="example">else if</span> to specify a new condition to test, if the first condition is false, <span class="example">else</span> we execute this block of code;</li><br>
+					<li id="loops"><span class="title">Loops</span> There are many different kinds of loops in every programming language, but they all essentially do the same thing, they will repeat an action some number of times. Imagine you have to run a mile, well you run around the track four times and then you stop. That's a loop!</li><br>
+					<li id="functions"><span class="title">Functions</span> Functions are an encapsulation of a code block. When we call our function this will run that code block. Think of it as a list of instructions. As an example imagine we are putting together a desk from Ikea, we open up the instruction manual and get started, first we screw the legs to the table top; next we place the table right way up. Done! We finished our instructions. Sadly there are a ton more tables to do so let's call our function over and over again.</li>
+				</ul>
+			</div>
+			<div class="footer">For more useful information check out this URL: <a href=""><span class="title">JavaScript!</span></a></div>
+		</div>
+	</body>
+</html>
